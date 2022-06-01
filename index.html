@@ -88,9 +88,101 @@
                <h1 class="hero-title">
                   Эффективные решения для вашего бизнеса
                </h1>
-               <button class="hero-button" type="button">
+               <button class="hero-button" type="button" data-modal-open>
                   Заказать услугу
                </button>
+            </div>
+
+            <div class="backdrop is-hidden" data-modal>
+               <div class="modal-wrapper">
+                  <button
+                     class="modal-button-close"
+                     data-modal-close
+                     type="button"
+                     aria-label="Close window"
+                  >
+                     <svg class="modal-close" width="11px" height="11px">
+                        <use href="./images/Icons/sprite.svg#icon-cross"></use>
+                     </svg>
+                  </button>
+
+                  <form class="form" autocomplete="off">
+                     <strong class="form-title"
+                        >Оставьте свои данные, мы вам перезвоним</strong
+                     >
+
+                     <div class="form-field">
+                        <label class="form-label" for="name">Имя</label>
+                        <input
+                           class="form-input"
+                           type="text"
+                           name="name"
+                           id="name"
+                           placeholder="Tkachenko Vladyslav"
+                           maxlength="14"
+                           autofocus
+                        />
+                        <!-- <svg class="form-icon" width="18px" heiht="18px">
+                           <use
+                              href="./images/Icons/sprite.svg#icon-person"
+                           ></use>
+                        </svg> -->
+                     </div>
+
+                     <div class="form-field">
+                        <label class="form-label" for="phone">Телефон</label>
+                        <input
+                           class="form-input"
+                           type="tel"
+                           name="tel"
+                           id="phone"
+                           placeholder="(_ _ _) _ _ _-_ _-_ _"
+                           maxlength="14"
+                        />
+                     </div>
+
+                     <div class="form-field">
+                        <label class="form-label" for="mail">Почта</label>
+                        <input
+                           class="form-input"
+                           type="email"
+                           name="email"
+                           id="mail"
+                           placeholder="Slava Ukraine"
+                           maxlength="14"
+                        />
+                     </div>
+
+                     <div class="form-field">
+                        <label class="form-label" for="comment"
+                           >Комментарий</label
+                        >
+                        <textarea
+                           class="form-textarea"
+                           name="comment"
+                           rows="5"
+                           placeholder="Введите текст"
+                           id="comment"
+                        ></textarea>
+                     </div>
+
+                     <div class="form-terms">
+                        <input
+                           class="form-input-terms"
+                           type="checkbox"
+                           name="terms"
+                           id="checkbox"
+                        />
+                        <label class="form-label-terms" for="checkbox">
+                           Соглашаюсь с рассылкой и принимаю Условия договора
+                        </label>
+                     </div>
+
+                     <button class="form-button" type="submit">
+                        Отправить
+                     </button>
+                  </form>
+               </div>
             </div>
          </section>
 
@@ -177,6 +269,9 @@
                         width="370"
                         height="294"
                      />
+                     <div class="working-thumb">
+                        <p class="working-thumb-text">Десктопные приложения</p>
+                     </div>
                   </li>
                   <li class="working-item">
                      <img
@@ -185,6 +280,9 @@
                         width="370"
                         height="294"
                      />
+                     <div class="working-thumb">
+                        <p class="working-thumb-text">Мобильные приложения</p>
+                     </div>
                   </li>
                   <li class="working-item">
                      <img
@@ -193,6 +291,9 @@
                         width="370"
                         height="294"
                      />
+                     <div class="working-thumb">
+                        <p class="working-thumb-text">Дизайнерские решения</p>
+                     </div>
                   </li>
                </ul>
             </div>
